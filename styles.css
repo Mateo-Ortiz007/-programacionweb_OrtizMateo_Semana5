@@ -1,0 +1,20 @@
+:root { font-family: Verdana, sans-serif; color: #281e2e; background: #f5f0e6; }
+body { margin: 0; }
+main { max-width: 64rem; margin: auto; padding: clamp(1rem, 4vw, 3rem); }
+header { background: #382448; color: #fff8eb; padding: clamp(1rem, 4vw, 2rem); border-radius: 1rem; }
+h1 { font-family: Georgia, serif; font-size: clamp(2rem, 6vw, 3.7rem); margin: 0 0 1rem; }
+label { display: block; margin-bottom: .4rem; }
+.entry { display: flex; flex-wrap: wrap; gap: .55rem; }
+input, button { font: inherit; border-radius: .4rem; padding: .6rem .75rem; border: 1px solid #7f668c; }
+input { flex: 1; min-width: 0; }
+button { cursor: pointer; background: #efe3f3; color: #281e2e; }
+button:disabled { opacity: .45; cursor: default; }
+.board { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-top: 1rem; }
+.lane { padding: 1rem; background: #fffdf8; border-top: .4rem solid #b56b39; border-radius: .6rem; }
+.lane:nth-child(2) { border-color: #784c97; }
+.lane:nth-child(3) { border-color: #477558; }
+.lane h2 { font: bold 1.4rem Georgia, serif; margin-top: 0; }
+.task { padding: .75rem; background: #f0e9e1; border-radius: .5rem; margin-top: .6rem; overflow-wrap: anywhere; }
+.task p { margin-top: 0; }
+.actions { display: flex; flex-wrap: wrap; gap: .35rem; }
+@media (max-width: 700px) { .board { grid-template-columns: 1fr; } }

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi tablero de tareas</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./main.js"></script>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Mi tablero de tareas</h1>
+      <form id="task-form">
+        <label for="task-name">¿Qué tienes que hacer?</label>
+        <div class="entry">
+          <input id="task-name" required maxlength="120">
+          <button>Crear tarea</button>
+        </div>
+      </form>
+    </header>
+    <div id="board" class="board"></div>
+  </main>
+</body>
+</html>
